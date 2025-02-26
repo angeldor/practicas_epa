@@ -1,0 +1,34 @@
+{Programar al robot para que recorra el perímetro de la ciudad buscando una esquina con exactamente 3 flores y 3 papeles, suponiendo que esta esquina existe. Debe informar cual es la esquina encontrada.}
+
+programa cap4eje6
+areas
+  ciudad: AreaC (1,1,100,100)
+robots
+  robot robot1
+  variables
+    flores, papeles, avenida, calle: numero
+  comenzar
+    repetir 4
+      repetir 99
+        flores:= 0
+        papeles:= 0
+        mientras(HayFlorEnLaEsquina)
+          tomarFlor
+          flores:= flores + 1
+        mientras(HayPapelEnLaEsquina)
+          tomarPapel
+          papeles := papeles + 1
+        si((flores=3)&(papeles=3))
+          avenida:= PosAv
+          calle:= PosCa
+        mover
+      derecha
+    Informar("CUMPLE_AV", avenida)
+    Informar("CUMPLE_CA", calle)
+  fin
+variables
+  R_info: robot1
+comenzar
+  AsignarArea(R_info, ciudad)
+  Iniciar(R_info, 1,1)
+fin
