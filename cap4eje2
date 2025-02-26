@@ -1,0 +1,33 @@
+{Programar al robot para que recorra la calle 3 desde la avenida 5 hasta la avenida 20 depositando un papel en cada esquina. Si durante el recorrido se queda sin papeles para depositar, debe detenerse.}
+
+programa cap4_ejer2
+areas
+  ciudad: AreaC (1,1,100,100)
+robots
+  robot robot1
+  variables
+    papeles_en_bolsa : numero
+    avenida: numero
+  comenzar
+    {agregamos de manera artificial los papeles para visualizar al robot}
+    repetir 20
+      tomarPapel
+      papeles_en_bolsa := papeles_en_bolsa +1
+    avenida := 5
+    Pos(5,3)
+    derecha
+    Informar(papeles_en_bolsa)
+    {NOS POSICIONAMOS SEGUN CONSIGNA}
+    mientras (~(papeles_en_bolsa = 0)&(avenida < 20))
+      depositarPapel
+      papeles_en_bolsa := papeles_en_bolsa - 1
+      mover
+      avenida := avenida + 1
+    {MIENTRAS HAYA PAPELES EN LA BOLSA QUE LAS CONTAMOS CON LA VARIABLE Y NO SE HAYA SUPERADO LA AVENIDA 20, EL ROBOT SEGUIRÁ}
+  fin
+variables
+  R_info: robot1
+comenzar
+  AsignarArea(R_info, ciudad)
+  Iniciar(R_info, 1,1)
+fin

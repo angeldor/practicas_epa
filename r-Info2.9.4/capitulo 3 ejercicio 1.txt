@@ -1,0 +1,6 @@
+a) i. 	todas las esquinas de la avenida 6 tienen al menos 1 flor
+		el robot verifica que hay una flor en (6,1) y se mueve a (6,2) y toma la flor y se detiene el programa ya que no hay mas flores en esa esquina
+ii. 	sólo la esquina (6,20) tiene flor
+		el robot no se moverá
+iii.	ninguna esquina de la acenida 6 tiene Flor
+		el robot no se moverá

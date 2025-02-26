@@ -1,0 +1,29 @@
+Realice un programa que le permita al robot recorrer todas las calles impares de la ciudad.
+Por cada calle impar deberá contar la cantidad de esquinas con mas de 8 flores y exactamente 3 papeles.
+Al finalizar el recorrido de toda la ciudad debera informar la cantidad de esquinas vacías que encontró durante todo el recorrido.
+Modularice la solución.
+
+debo de ver como configurar correctamente las variables, para que su scope sea global
+
+no puedo preguntar directamente cuantas flores o papeles hay en la esquina, asi que tendre que recoger todas las flores y/o papeles que haya y contabilizarlos mediante una variable, y luego de tener contado todo, 
+evaluar la esquina a los parametros que me pide el ejercicio
+
+variables
+	papelesEnLaEsquina
+	floresEnLaEsquina
+	esquinaVacia
+	esquina
+
+
+statements
+	if 		|| si
+	if else  	|| si sino
+	while 		|| mientras
+	for 		|| repetir
+
+procesos que necesito
+	verificarFlores(cuento las flores)
+	verificarPapeles(cuento los papeles)
+	verificarCondicionesDeEsquina(tomo los datos de los dos procesos anteriores y los verifico si cumplen con el requisito de la calle con x>8 flores y x=3 papeles, reinicio las variables)
+	recorrerCalle
+	

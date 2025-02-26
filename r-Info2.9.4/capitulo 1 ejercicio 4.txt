@@ -1,0 +1,16 @@
+4. Escriba un algoritmo que le permita trasladar 70 cajas de 30 kilos cada una, desde la
+Sala A hasta la Sala B. Considere que sólo llevará una caja a la vez porque el
+contenido es muy frágil. Para realizar el trabajo debe ponerse un traje especial y
+quitárselo luego de haber realizado el trabajo.
+
+tomar traje especial del gabinete
+ponerse el traje especial
+repetir 70
+	tomar 1 caja
+	dirigirse al punto B
+	dejar la caja
+	dirigirse al punto A
+quitarse el traje especial
+guardar el traje nuevamente en el gabinete
+
+

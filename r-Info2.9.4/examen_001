@@ -1,0 +1,43 @@
+programa examen001
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso avanzarCalle
+  comenzar
+    Pos(1,PosCa + 2)
+  fin
+  proceso recorrerCalle
+  variables
+    floresEnLaEsquina : numero
+    papelesEnLaEsquina : numero
+  comenzar
+    floresEnLaEsquina := 0
+    papelesEnLaEsquina := 0
+    si(HayFlorEnLaEsquina)
+      mientras(HayFlorEnLaEsquina)
+        tomarFlor
+        floresEnLaEsquina := floresEnLaEsquina + 1
+        Informar(floresEnLaEsquina)
+    Informar(floresEnLaEsquina)
+  fin
+{01 si se que al principio estoy en la calle 1 que es impar, con que sume 2 al pos para ir a cada calle bastaria para hacer todas las calles impares,
+ahora debo de ver como hacer que el robot se detenga en la calle 99}
+{02 ahora debo de hacer que pueda verificar cada esquina que haya mas de 8 flores y 3 papeles
+((verificar si hay florEnEsquina > 8)&&(papelesEnLaEsquina = 3))}
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    recorrerCalle
+  fin
+variables
+  rinfo: robot1
+comenzar
+  AsignarArea(rinfo,ciudad)
+  Iniciar(rinfo,1,1)
+fin
+    

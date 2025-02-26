@@ -1,0 +1,24 @@
+programa cap3ejer2inc1
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    flores_en_bolsa: numero
+  comenzar
+    flores_en_bolsa := 0
+    Pos(1,7)
+    derecha
+    mientras ~((PosAv >= 100) | (flores_en_bolsa = 20))
+      mientras HayFlorEnLaEsquina
+        tomarFlor
+        flores_en_bolsa := flores_en_bolsa + 1
+      mover
+    Informar(PosAv)
+  fin
+variables
+  rinfo: robot1
+comenzar
+  AsignarArea(rinfo,ciudad)
+  Iniciar(rinfo,1,1)
+fin

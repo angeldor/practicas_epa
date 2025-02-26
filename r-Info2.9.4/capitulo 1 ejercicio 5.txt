@@ -1,0 +1,11 @@
+5. Modifique el algoritmo 4 suponiendo que puede trasladar 60 kilos a la vez.
+
+tomar traje especial del gabinete
+ponerse el traje especial
+repetir 35s
+	tomar 2 cajas
+	dirigirse al punto B
+	dejar las cajas
+	dirigirse al punto A
+quitarse el traje especial
+guardar el traje nuevamente en el gabinete

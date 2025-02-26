@@ -1,0 +1,16 @@
+Escriba un algoritmo que le permita guardar fotos en un álbum familiar. El álbum
+está compuesto por 150 páginas y se encuentra vacío. En cada página entran 10
+fotos. El álbum se completa por páginas. Una vez que el álbum está completo, debe
+guardarse en la biblioteca. Considere que cuenta con fotos suficientes para
+completar el álbum. Para mayor simplicidad, las páginas se completan de un solo
+lado.
+
+EL album tiene 150 paginas, 10 fotos por pagina, en total son 1500 fotos en total. 
+
+
+abrir album
+repetir 150
+	mientras(fotos = 0, fotos <= 10, fotos ++)
+		colocar foto
+	pasar de página
+cerra album

@@ -1,0 +1,85 @@
+programa HolaMundo
+procesos
+  proceso H
+  comenzar
+    Pos(2,2)
+    repetir 12
+      mover
+    Pos(2,8)
+    derecha
+    repetir 6
+      mover
+    Pos(8,2)
+    izquierda
+    repetir 12
+      mover 
+  fin
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso O
+  comenzar
+    Pos(10,2)
+    repetir 12
+      mover
+    derecha
+    repetir 6
+      mover
+    derecha
+    repetir 12
+      mover
+    derecha
+    repetir 6
+      mover
+    derecha
+  fin
+  proceso L
+  comenzar
+    Pos(18,2)
+    repetir 12
+      mover
+    derecha
+    Pos(18,2)
+    repetir 6
+      mover
+    izquierda
+  fin
+  proceso A
+  comenzar
+    Pos(26,2)
+    repetir 12
+      mover
+    derecha
+    repetir 6
+      mover
+    derecha
+    repetir 12
+      mover
+    Pos(26,8)
+    izquierda
+    repetir 6
+      mover
+    izquierda
+  fin
+  proceso M
+  comenzar
+    Pos(36,2)
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+
+robots 
+  robot robot1 
+  comenzar
+    A
+    M
+    Informar(PosAv, PosCa)
+  fin
+variables
+  rinfo: robot1
+comenzar
+  AsignarArea(rinfo, ciudad)
+  Iniciar(rinfo,1,1)
+fin

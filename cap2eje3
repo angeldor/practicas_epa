@@ -1,0 +1,29 @@
+programa cap3ejer2inc1
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    flores: numero
+    total: numero
+    esq_vacias: numero
+  comenzar
+    esq_vacias := 0
+    repetir 99
+      repetir 99
+        si ~(HayFlorEnLaEsquina & HayPapelEnLaEsquina)
+          esq_vacias := esq_vacias + 1
+        mover
+      Pos(PosAv + 1,1)
+    repetir 99
+      si ~(HayFlorEnLaEsquina & HayPapelEnLaEsquina)
+        esq_vacias := esq_vacias + 1
+      mover
+    Informar(esq_vacias)
+  fin
+variables
+  rinfo: robot1
+comenzar
+  AsignarArea(rinfo,ciudad)
+  Iniciar(rinfo,1,1)
+fin

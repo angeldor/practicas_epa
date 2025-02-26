@@ -1,0 +1,35 @@
+programa ejercicio010
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 99
+      mientras(HayPapelEnLaEsquina)
+        tomarPapel
+      mientras(HayFlorEnLaEsquina)
+        tomarFlor
+      mover
+    mientras(HayPapelEnLaEsquina)
+      tomarPapel
+    mientras(HayFlorEnLaEsquina)
+      tomarFlor
+    repetir 4
+      Pos(PosAv + 1,1)
+      repetir 99
+        mientras(HayPapelEnLaEsquina)
+          tomarPapel
+        mientras(HayFlorEnLaEsquina)
+          tomarFlor
+        mover
+      mientras(HayPapelEnLaEsquina)
+        tomarPapel
+      mientras(HayFlorEnLaEsquina)
+        tomarFlor
+  fin
+variables
+  rinfo: robot1
+comenzar
+  AsignarArea(rinfo,ciudad)
+  Iniciar(rinfo,1,1)
+fin

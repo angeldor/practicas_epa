@@ -1,0 +1,23 @@
+3. Utilizando las estructuras de control vistas resolver:
+a)  Un algoritmo que, en caso de ser necesario, permita cambiar el filtro de papel de
+una cafetera. Considere que está frente a la cafetera y que dispone de un filtro
+suplente.
+
+b) Modifique la solución anterior para que cuando encuentre que el filtro de la
+cafetera está limpio, guarde el filtro suplente en el lugar correspondiente.
+
+
+abrir cafetera
+si(hay filtroUsado){
+	tomar filtro usado
+	caminar hasta cesto de basura
+	abrir cesto de barura
+	tirar filtro usado
+	cerrar cesto de basura
+	caminar hacia la cafetera
+	tomar filtro nuevo
+	colocar filtro nuevo en la cafetera
+	cerrar cafetera
+}
+
+esta solucion contempla la solucion b tambien donde se pide que se verifique si el filtro que esta en la cafetera esta usado
