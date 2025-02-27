@@ -1,0 +1,28 @@
+{Realice un programa que le permita al robot recorrer todas las calles impares de la ciudad. Por cada calle impar deberá contarla cantidad de esquinas con mas de 8 flores y exactamente 3 papeles. Al finalizar el recorrido de toda la ciudad deberá informar la cantidad de esquinas vacías que encontro durante todo el recorrido.}
+{Modularice la solución}
+
+programa ejercicio_de_examen
+procesos
+  proceso recorrer_calles_impares(ES esq_vacias: numero)
+  comenzar
+    Pos(numAv, 1)
+    repetir 99
+      mover
+  fin
+areas
+  ciudad: AreaC (1,1,100,100)
+robots
+  robot robot1
+  variables
+    informe:numero
+  comenzar
+    informe:= 0
+    recorrer_calles_impares(informe)
+    Informar('La cantidad de esquinas vacías es de: ',informe)
+  fin
+variables
+  R_info: robot1
+comenzar
+  AsignarArea(R_info, ciudad)
+  Iniciar(R_info, 1,1)
+fin
