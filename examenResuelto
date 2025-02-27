@@ -1,0 +1,45 @@
+programa muerte
+procesos
+  proceso recorrer_ciudad(ES flores_tot:numero)
+  comenzar
+    repetir 99
+      recorrer_calle(flores_tot)
+      Pos(PosAv + 1,1)
+    recorrer_calle(flores_tot)
+  fin
+  proceso recorrer_calle(ES flor_tot: numero)
+  comenzar
+    mientras ~(HayPapelEnLaEsquina & HayFlorEnLaEsquina) & (PosCa < 100)
+      contar_flores(flor_tot)
+      mover
+    contar_flores(flor_tot)
+  fin
+  proceso contar_flores(ES floresTotales: numero)
+  variables
+    flores:numero
+  comenzar
+    flores:= 0
+    mientras(HayFlorEnLaEsquina)
+      tomarFlor
+      flores:= flores + 1
+      floresTotales:= floresTotales + 1
+    repetir flores
+      depositarFlor
+  fin
+areas
+  ciudad: AreaC (1,1,100,100)
+robots
+  robot robot1
+  variables
+    informe: numero
+  comenzar
+    informe:= 0
+    recorrer_ciudad(informe)
+    Informar(informe)
+  fin
+variables
+  R_info: robot1
+comenzar
+  AsignarArea(R_info, ciudad)
+  Iniciar(R_info, 1,1)
+fin
