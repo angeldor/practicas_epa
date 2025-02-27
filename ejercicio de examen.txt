@@ -1,0 +1,14 @@
+Realice un programa que le permita al robot recorrer todas las calles impares de la ciudad. 
+Por cada calle impar deberá contarla cantidad de esquinas con mas de 8 flores y exactamente 3 papeles.
+Al finalizar el recorrido de toda la ciudad deberá informar la cantidad de esquinas vacías que encontró durante todo el recorrido.
+
+Modularice la solución
+
+1. 	necesito hacer que recorra las calles impares
+		necesito que recorra una calle entera
+			necesito que cuente las esquinas con mas de 8 flores y 3 papeles
+				variable de flores y de papeles para contar en cada esquina
+			necesito que cuente las esquinas vacías
+				variable de esquinas vacías
+	informar las esquinas vacías
+	
